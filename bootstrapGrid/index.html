@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap grid responsive</title>
+    <!--Links CDN para utilizar bootstrap y otras tecnologías-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <link href="CSS/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="docjs.js"></script>
+</head>
+
+<!--En este caso, para hacer el esquema básico grid o rejilla, he usado bootstrap 3.5.1-->
+<!--La estructura se compone de un container donde hay tres filas(rows). En cada row he añadido columnas y después incluido el número de columnas que quiero que ocupen para cada tamaño de pantalla-->
+<!--He reservado el css para modificar todo lo relativo al estilo-->
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="uno" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Header 1</div>
+        </div>
+        <div class="row">
+            <div id="dos" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">Columna numero 2</div>
+            <div id="tres" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">Columna numero 3</div>
+            <div id="cuatro" class="col-lg-4 col-md-4 col-sm-12 col-xs-12">Columna numero 4</div>
+        </div>
+    </div>
+    <dialog id="d">   HOLA <button id="boton2">Click<p id="contador">0</p>  </button> </dialog>
+    <button onclick="d.showModal()"><ol><li></li></ol></button>
+</body>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div id="cinco" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">Columna numero 5 footer</div>
+            <div id="seis" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">Columna numero 6 footer</div>
+        </div>
+    </div>
+</footer>
+
+</html>

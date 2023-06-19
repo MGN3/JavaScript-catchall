@@ -1,0 +1,176 @@
+/* Estilos para pantallas muy pequeñas (xs)
+
+Máx 576 ( xs )
+Min 577 máx 767 ( sm )
+Min 768 máx 991 ( md)
+Min 992 máx 1199 (lg)
+Min 1200 (xl) 
+
+Para el tamaño de la caja: height y width.
+Margin: espacio entre cajas o grids. margin: 10px;
+border: características del borde del elemento: border-style, width, color...
+padding: distancia entre el contenido del box y el borde.
+
+*/
+
+body{
+  text-align: center;
+}
+.row{
+  text-align: center;
+}
+
+/*Tamaño de pantallas XS*/
+/*Usando media query, especificamos el comportamiento o aspectos visuales para un tamaño específico de pantalla*/
+@media (max-width: 576px) { 
+    #uno{
+        background-color: darksalmon;
+        border-style: solid;
+        border-width: 5px;
+        border-color: white;
+        padding: 5px;
+        height: 59px;
+      }
+      #dos, #cuatro{
+        background-color: red;
+        border-style: solid;
+        border-width: 5px;
+        border-color: white;
+        padding: 10px;
+        height: 120px;
+      }
+      #tres{
+        background-color: lightskyblue;
+        border-style: solid;
+        border-width: 5px;
+        border-color: white;
+        padding: 10px;
+        height: 120px;
+      }
+      #cinco, #seis{
+        background-color: yellow;
+        border-style: solid;
+        border-width: 5px;
+        border-color: white;
+        padding: 10px;
+      }
+  }
+  
+  /* Estilos para pantallas pequeñas (sm) */
+  @media (min-width: 577px) and (max-width: 767px) {
+    #uno{
+        background-color: lightskyblue;
+        border-style: solid;
+        border-width: 5px;
+        border-color: white;
+        padding: 5px;
+      }
+      #dos, #tres{
+        background-color: red;
+        border-style: solid;
+        border-width: 5px;
+        border-color: white;
+        padding: 10px;
+        height: 170px;
+      }
+      #cuatro{
+        background-color: lightgreen;
+        border-style: solid;
+        border-width: 5px;
+        border-color: white;
+        padding: 10px;
+        height: 170px;
+      }
+      #cinco, #seis{
+        background-color: yellow;
+        border-style: solid;
+        border-width: 5px;
+        border-color: white;
+        padding: 10px;
+      }
+  }
+  
+  /* Estilos para pantallas medianas (md) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    #uno{
+        background-color: lightgreen;
+        border-style: solid;
+        border-width: 5px;
+        border-color: white;
+        padding: 5px;
+      }
+      #dos, #tres, #cuatro{
+        background-color: red;
+        border-style: solid;
+        border-width: 5px;
+        border-color: white;
+        height: 300px;
+        padding: 30px;
+      }
+      #cinco, #seis{
+        background-color: yellow;
+        border-style: solid;
+        border-width: 5px;
+        border-color: white;
+        padding: 10px;
+      }
+  }
+  
+  /* Estilos para pantallas grandes (lg) */
+  @media (min-width: 992px) and (max-width: 1199px){
+    #uno{
+        background-color: lightgreen;
+        border-style: solid;
+        border-width: 5px;
+        border-color: white;
+        padding: 5px;
+      }
+      #dos, #tres, #cuatro{
+        background-color: red;
+        border-style: solid;
+        border-width: 5px;
+        border-color: white;
+        height: 300px;
+        padding: 30px;
+      }
+      #cinco, #seis{
+        background-color: yellow;
+        border-style: solid;
+        border-width: 5px;
+        border-color: white;
+        padding: 10px;
+      }
+  }
+  
+  /* Estilos para pantallas muy grandes (xl) */
+  @media (min-width: 1200px){
+    #uno{
+        background-color: lightgreen;
+        border-style: solid;
+        border-width: 5px;
+        border-color: white;
+        padding: 5px;
+      }
+      #dos, #tres, #cuatro{
+        background-color: red;
+        border-style: solid;
+        border-width: 5px;
+        border-color: white;
+        height: 300px;
+        padding: 30px;
+      }
+      #cinco{
+        background-color: yellow;
+        border-style: solid;
+        border-width: 5px;
+        border-color: white;
+        padding: 10px;
+      }
+      #seis{
+        background-color: yellow;
+        border-style: solid;
+        border-width: 5px;
+        border-color: white;
+        padding: 10px;
+      }
+  }

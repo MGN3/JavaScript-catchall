@@ -1,0 +1,85 @@
+/*Para modificar los elementos: etiqueta{} para etiquetas html, .class{} para clases de bootstrap y #id{} para elementos con un id especificado. */
+
+.jumbotron {
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+}
+
+#header1,
+#header2,
+#header3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(33, 37, 41);
+    color: white
+}
+
+/*Con este media-query elijo un color de backgound diferente en el header y otras modificaciones en tamaños XS de pantalla*/
+@media (max-width: 577px) {
+
+    #header1,
+    #header2,
+    #header3 {
+        background-color: grey;
+    }
+
+    body {
+        font-size: smaller;
+    }
+
+    #textofooter {
+        display: none;
+    }
+}
+
+#imgLogo {
+    width: 120px;
+    height: 90px;
+}
+
+.carousel-item img {
+    max-width: 450px;
+    height: 450px;
+    display: inline-block;
+    margin: auto;
+    /*centrar las imágenes del carrusel*/
+}
+
+/*Con invert modifico el color de la flecha del botón.*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+#jumbotronText {
+    text-align: justify;
+    display: inline;
+}
+
+#skill {
+    font-style: italic;
+    font-size: large;
+}
+
+/*Con esta propiedad doy igual espaciado entre columnas*/
+th {
+    width: 20%;
+}
+
+#label1,
+#label2 {
+    font-weight: bold;
+
+}
+
+/*Elección de atributos para colocar la lista y que no quede descolocada al cambiar de tamaño el navegador o usar otros dispotivos pequeños.*/
+li {
+    list-style-position: inside;
+    text-align: left;
+    margin-left: 100px;
+}

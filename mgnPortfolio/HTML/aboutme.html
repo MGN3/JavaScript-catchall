@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="MGN Portfolio"
+        content="Full-Stack web developer. Developing webs from scratch, based on your needs and adapted to your budget. Best practices, scalable webs and easy to mantain." />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index,follow" /> <!--Permitimos aparecer en buscadores online-->
+    <title>MGN Portfolio</title></a>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--Links CDN para habilitar bootstrap 5 sin necesidad de descargar el codigo fuente-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/style.css" />
+
+    <script src="../JS/main.js" type="text/javascript"></script>
+</head>
+
+<!--Esta web ha sido realizada con BOOTSTRAP 5 e intentando seguir las normas de HTML5 semántico, usando etiquetas específicas que se corresponden con partes comunes de una web: main, header, article, figure, footer-->
+
+<!--Además, con una intención de testeo y variedad, he personalizado la apariencia de la web usando: Estilos inline(tanto con la etiqueta "style" como usando atributos predefinidos en bootstrap 
+dentro de la etiqueta "class") y estilos externos a través del link CSS. El método que no he usado es estilos internos, introduciendo en el head <style> </style>-->
+
+<body>
+    <main>
+        <a name="ancla"></a>
+
+        <!--HEADER-->
+
+        <header>
+            <div class="container">
+                <div class="row fixed-top"> <!--con el atributo fixed-top mantenemos el header fijo al hacer "scroll"-->
+                    <div id="header1" class="col-4"><a href="../index.html"><img id="imgLogo" src="../IMG/LOGO.jpg"
+                                alt="Logo"></a></div>
+
+                    <div id="header2" class="col-4">
+                        <h1 class="d-none d-md-block">{Marcelino Gil}</h1>
+                        <h1 class="d-flex d-sm-block d-md-none">{MGN}</h1>
+                        <!--Este título h1 solo se verá en las pantallas: xs, sm y md-->
+                    </div>
+
+                    <div id="header3" class="col-4">
+                        <div class="collapse" id="navbarToggleExternalContent">
+                            <!--Ese id es parte de bootstrap y otorga las funcionalidades del botón.-->
+                            <div id="boton1">
+                                <ul class="list-unstyled">
+                                    <li><a href="../index.html">Home</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
+                            </div>
+                        </div>
+                        <nav class="navbar">
+                            <div class="container-fluid">
+                                <!--Aquí abajo se incluyen todos los atributos que hacen al botón comportarse de cierta manera-->
+                                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarToggleExternalContent"
+                                    aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!--JUMBOTRON-->
+
+        <div class="jumbotron bg-light rounded-3 py-5 px-5">
+            <div class="container-fluid col-8">
+                <h1 class="display-5 fw-bold">What can I say about me... </h1>
+                <br>
+                <h2>I am a politics freak, videogames enjoyer, surfskater newbie, vegan and
+                    permaculture advocate</h2>
+                <br>
+                <p id="jumbotronText" class="fs-4">I consider myself a curious human being trying to figure out the meaning of life
+                    and enjoying the path.
+                    Now, I am diving into the vast and amazing world of programming, excited to be part of
+                    a profession that is shaping the world.
+                </p>
+            </div>
+        </div>
+
+        <br><br>
+
+        <article> <!--Carrusel de imágenes y las dos flechas para avanzar o retroceder-->
+            <div class="container">
+                <div class="row">
+                    <div id="carousel1" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../IMG/IMG2368px.jpg" class="d-block w-100 rounded-3" alt="imagen primera">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../IMG/imgIG2.jpg" class="d-block w-100 rounded-3" alt="imagen segunda">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel1"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel1"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+
+        <br><br><br>
+
+        <!--TABLA-->
+
+        <article>
+            <div class="container">
+                <h1>Web Development Skills</h1>
+                <div class="table">
+                    <table class="table table-striped">
+                        <!--table-striped sombrea las filas de forma intercalada para facilitar la lectura-->
+                        <thead>
+                            <tr>
+                                <th>Skill</th>
+                                <th>Type</th>
+                                <th>Progress</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="skill">HTML</td>
+                                <td>Frontend</td>
+                                <td> <!--La tercera columna de cada fila incluye un "progress-bar" para mostrar visualmente el progreso que considero he adquirido de cada skill-->
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 55%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>CSS</td>
+                                <td>Frontend</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 50%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td id="skill">BootStrap</td>
+                                <td>Frontend</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 40%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td id="skill">Java</td>
+                                <td>Backend</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 35%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td id="skill">SQL</td>
+                                <td>Backend</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 60%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td id="skill">JavaScript</td>
+                                <td>Frontend/Backend</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 5%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td id="skill">Python</td>
+                                <td>Backend</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 5%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td id="skill">TypeScript</td>
+                                <td>Frontend/Backend</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 0%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td id="skill">node.js</td>
+                                <td>Frontend/Backend</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 0%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td id="skill">PowerShell</td>
+                                <td>Command-line</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 20%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td id="skill">Bash</td>
+                                <td>Command-line</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 30%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td id="skill">Spanish</td>
+                                <td>- -</td>
+                                <td>Native</td>
+
+                            </tr>
+                            <tr>
+                                <td id="skill">English</td>
+                                <td>- -</td>
+                                <td>B2.2</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </article>
+
+
+        <br><br>
+
+        <!--Dos cajas de texto con botón-->
+
+        <article>
+            <div class="container">
+                <div class="row align-items-md-stretch">
+                    <div class="col-md-6">
+                        <div class="h-100 p-5 text-bg-light rounded-3">
+                            <h2>Random things about me</h2>
+                            <p>
+                                Originally, I wanted to study is philosophy.
+                                But law seemed like a opportune choice as it was a discipline that has an
+                                important philosophical side but also had a better professional perspective.
+                            </p>
+                            <a href="https://es.wordpress.org/">
+                                <button class="btn btn-outline-dark" type="button">More about me</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="h-100 p-5 text-bg-dark border rounded-3">
+                            <h2>Reflections</h2>
+                            <p>I can say that I like to see things from a 360 degree perspective.
+                                Looking for a holistic point of view helps to understand things correctly with the least
+                                possible bias.
+                            </p>
+                            <p>
+                                It sounds kind of easy to say, but when it comes to ethics, politics, ideology
+                                and economy then triying to reach meaningful conclusions and form an opinion becomes a
+                                hard
+                                task.
+                                Among all the things that I have learned in my life, one the most important to me
+                                is to truly understand what the other wants to communicate.
+                            </p>
+                            <p>
+                                Sometimes, people tend to
+                                put barriers to mutual understanding, for so many different reasons, but when you have
+                                a sincere intention to hear the others ideas and comunicate your own ones, then is when
+                                magic happens, connection.
+                                And technology is also about that. Creating programs, webs, apps..., is another way of communication where
+                                the developer is the one creating the environment and functionalities that a users
+                                will eventually face, It's like an asyncronous communication.
+                            </p>
+                            <a href="https://es.wordpress.org/">
+                                <button class="btn btn-outline-light" type="button">More in my blog</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <br><br>
+
+        <!--Texto y lista-->
+
+        <article>
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 text-center">
+                        <h2>How did I end up studying programming?</h2>
+                        <p>There are many reasons why I decided to study web development, some of the main reasons were:
+                        <ul>
+                            <li>There is a high demand for programmers</li>
+                            <li>It is a complex and thriving discipline </li>
+                            <li>At the forefront of technology</li>
+                            <li>There are many options to work remotely</li>
+                            <li>You can create projects from scratch by yourself and go freelance</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <br><br>
+
+        <!--FOOTER-->
+
+        <div class="container-fluid bg-dark">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+                <p id="textofooter" class="col-md-4 mb-0" style="color:white">&copy; 2023 Marcelino Gil Nombela</p>
+
+                <a href="#ancla"
+                    class="col-md-4 d-flex align-items-center justify-content-center me-md-auto"><!--con me-md-auto consigo que los elementos queden bien colocados.-->
+                    <p>Back to top</p>
+                </a>
+
+                <figure><!--mx= margin left y right (eje x)-->
+                    <a href="https://github.com/MGN3" target="_blank">
+                        <!--con la clase y atributo: target="_blank" el link se abre en una nueva pestaña del navegador-->
+                        <img src="../IMG/github.png" alt="github" height="60" width="60">
+                    </a>
+                </figure>
+                <figure>
+                    <a href="https://www.linkedin.com/in/marcelino-gil-nombela/" target="_blank">
+                        <img src="../IMG/linkedin.png" alt="linkedin" height="60" width="60">
+                    </a>
+                </figure>
+                <figure class="mx-3">
+                    <a href="mailto:mgilnombela@gmail.com" target="_blank">
+                        <img src="../IMG/gmailfinal.png" alt="gmail" height="50" width="50">
+                    </a>
+                </figure>
+            </footer>
+        </div>
+    </main>
+</body>
+
+</html>
